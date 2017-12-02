@@ -1,4 +1,4 @@
---创建早餐店管理系统
+﻿--创建早餐店管理系统
 --员工类型表
 CREATE TABLE staff_type
 (
@@ -44,8 +44,9 @@ CREATE TABLE order_main
 CREATE TABLE order_list
 (
   id       NUMBER(10) PRIMARY KEY,
-  order_id NUMBER(10) REFERENCES order_main(id) NOT NULL ,
+  order_id NUMBER(10) REFERENCES order_main(id)  NOT NULL,
   food_id  NUMBER(10) REFERENCES food (id)       NOT NULL,
+  food_number NUMBER(10)                         NOT NULL,
   isdelete NUMBER(1) DEFAULT (1)                 NOT NULL
 );
 
