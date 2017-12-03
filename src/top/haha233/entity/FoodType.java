@@ -8,6 +8,10 @@ public class FoodType {
 	public FoodType() {
 	}
 
+	public FoodType(int id) {
+		this.id = id;
+	}
+
 	public FoodType(int id, String name, int isdelete) {
 		this.id = id;
 		this.name = name;
