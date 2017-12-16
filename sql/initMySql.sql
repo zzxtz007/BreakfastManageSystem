@@ -37,6 +37,7 @@ CREATE TABLE food
   REFERENCES food_type (id)
 );
 --订单主表
+-- #mysql 5.65以上支持DATETIME 字段 以下请使用TIMESTAMP
 CREATE TABLE order_main
 (
   id          INT(10) PRIMARY KEY AUTO_INCREMENT,
@@ -103,7 +104,7 @@ VALUES ('荞麦馒头', 2, 2);
 INSERT INTO food (name, price, type_id)
 VALUES ('猪肉白菜水饺', 9, 3);
 INSERT INTO food (name, price, type_id)
-VALUES ('红肉抄手', 6, 3);
+VALUES ('红油抄手', 6, 3);
 INSERT INTO food (name, price, type_id)
 VALUES ('麻油拌面', 5, 4);
 INSERT INTO food (name, price, type_id)

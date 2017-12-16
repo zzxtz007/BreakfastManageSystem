@@ -6,9 +6,7 @@ GRANT USAGE
 ON *.* TO 'breakfast'@'localhost' IDENTIFIED BY 'stu123456' WITH GRANT OPTION;
 
 --添加权限
-
-
-GRANT all ON breakfast.* TO 'breakfast'@'localhost' IDENTIFIED BY 'stu123456';
+GRANT ALL ON breakfast.* TO 'breakfast'@'%' IDENTIFIED BY 'stu123456';
 
 --刷新权限
 FLUSH PRIVILEGES;

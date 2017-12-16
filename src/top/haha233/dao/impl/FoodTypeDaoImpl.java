@@ -14,7 +14,6 @@ import java.util.ArrayList;
 public class FoodTypeDaoImpl implements FoodTypeDao {
 	@Override
 	public ArrayList<FoodType> queryAll() {
-		//todo
 		//language=MySQL
 		String sql = "SELECT\n" +
 				"  id,\n" +

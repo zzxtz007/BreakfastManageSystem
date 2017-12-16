@@ -12,22 +12,6 @@
 <%!
     ArrayList<FoodType> foodTypes;
     public void init(){
-        SuperInfo foodTypeSi = ServiceFactory.getFoodTypeServiceImpl().showAllFoodType();
-        if (foodTypeSi.getRet()==0){
-            if (foodTypeSi.getListSize()>=0){
-                foodTypes = foodTypeSi.getLists();
-                if (foodTypes!=null){
-                    System.out.println("成功");
-                    System.out.println(foodTypes);
-                }else {
-                    System.out.println("1");
-                }
-            }else {
-                System.out.println("2");
-                System.out.println(foodTypeSi.getLists());
-            }
-        }else {
-            System.out.println("3");
-        }
+
     }
 %>

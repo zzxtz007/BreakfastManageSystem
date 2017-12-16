@@ -29,7 +29,7 @@
     </style>
     <script type="text/javascript">
         function order() {
-            location.href="Order.jsp";
+            location.href="ShowFoodType";
         }
     </script>
 </head>
